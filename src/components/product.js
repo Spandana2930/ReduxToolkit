@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import {useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,7 +19,7 @@ const Product = ()=> {
     //   .then((res) => res.json())
     //   .then((result) => getProducts(result));
 
-  }, []);
+  }, [dispatch]);
 
 
   const addToCart = (product)=>{
